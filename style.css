@@ -14,5 +14,61 @@
 /*******************
 basic styles
 *******************/
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+body {
+    line-height: 1.6;
+    font-size: var(--font);
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+h1, h2, h3, h4 {
+    font-family: "FTY SKORZHEN NCV";
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: var(--transition);
+}
+ul {
+    list-style: none;
+}
+nav {
+    background: var(--black);
+    border-top: 5px solid var(--red);
+}
+.logo img {
+    width: 200px;
+    height: auto;
+}
+.logo:hover {
+    opacity: .7;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    color: var(--white);
+    font-size: 1.6rem;
+    margin-left: 30px;
+}
+nav ul li a:hover {
+    color: var(--red);
+}
 
