@@ -144,6 +144,36 @@ band
     font-size: 1.4rem;
     margin-top: 20px;
 }
+/*******************
+video
+*******************/
+.video {
+    padding: var(--padding);
+}
+/*******************
+footer
+*******************/
+footer {
+    padding: var(--padding);
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    border-radius: 150px 0 0 0;
+}
+footer a {
+    color: var(--red);
+}
+footer a:hover {
+    color: var(--white);
+}
+footer .socials a {
+    font-size: 2rem;
+    margin: 0 20px;
+}
+
+
+
+
 
 
 
