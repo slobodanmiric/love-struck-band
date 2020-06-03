@@ -43,6 +43,9 @@ a:hover {
 ul {
     list-style: none;
 }
+/*******************
+nav
+*******************/
 nav {
     background: var(--black);
     border-top: 5px solid var(--red);
@@ -71,4 +74,28 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--red);
 }
-
+/*******************
+header
+*******************/
+.main-header {
+    background-image: url(img/Promo%204.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    border-radius: 0 0 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-header h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    background: linear-gradient(rgba(201, 111, 99,.8), rgba(0,0,0,.8));
+    padding: 30px;
+    border-radius: 0 40px 0 40px;
+}
+.main-header h1 span {
+    color: var(--black);
+    text-shadow: 0 0 5px var(--white);
+    letter-spacing: 2px;
+}
