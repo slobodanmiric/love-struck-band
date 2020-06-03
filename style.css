@@ -46,6 +46,7 @@ ul {
 .headings {
     font-size: 3rem;
     padding-bottom: 30px;
+    text-align: center;
 }
 hr {
     height: 3px;
@@ -117,7 +118,32 @@ about
     padding: var(--padding);
     text-align: center
 }
-
+/*******************
+band
+*******************/
+.band {
+    text-align: center;
+}
+.band img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 40px 0 40px;
+}
+.band img:hover {
+    border-radius: 40px 0 40px 0;
+    transition: var(--transition);
+}
+.band .container {
+    display: flex;
+    justify-content: space-between
+}
+.band .container article {
+    flex: 0 0 30%;
+}
+.band h4 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
 
 
 
