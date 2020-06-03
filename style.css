@@ -1,0 +1,327 @@
+/*https://www.onlinewebfonts.com/download/6ef3076e880d44c4f86c908020821c7b*/
+
+@import url(//db.onlinewebfonts.com/c/6ef3076e880d44c4f86c908020821c7b?family=FTY+SKORZHEN+NCV);
+:root {
+    --red: #c96f63;   /* rgb(201, 111, 99) */
+    --black: #222;
+    --lightgray: #aaa;
+    --white: #fff;
+    --font: 16px;
+    --padding: 100px 0;
+    --transition: .3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+body {
+    line-height: 1.6;
+    font-size: var(--font);
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+h1, h2, h3, h4 {
+    font-family: "FTY SKORZHEN NCV";
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: var(--transition);
+}
+hr {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, var(--red), var(--black));
+    border: none;
+    margin-top: 100px;
+}
+.headings {
+/*    background: transparent url("img/sesir.png" ) no-repeat;*/
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+.headings::before {
+    
+}
+/*******************
+nav
+*******************/
+nav {
+    background: var(--black);
+    border-top: 5px solid var(--red);
+}
+nav .container {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo img {
+    width: 200px;
+    height: auto;
+}
+.logo:hover {
+    opacity: .7;
+}
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    color: var(--white);
+    font-size: 1.6rem;
+    margin-left: 30px;;
+}
+nav ul li a:hover {
+    color: var(--red);
+    transition: var(--transition);
+}
+/*******************
+header
+*******************/
+.main-header {
+    background-image: url(img/Promo%204.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    border-radius: 0 0 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-header h1 {
+    color: var(--white);
+    font-size: 2.4rem;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(201, 111, 99,.8), rgba(0,0,0,.8));
+    border-radius: 0 40px 0 40px;
+    padding: 30px;
+}
+.main-header h1 span {
+    color: var(--black);
+    text-shadow: 0 0 5px var(--white);
+    letter-spacing: 2px;
+    font-size: 130%;
+}
+/*******************
+about
+*******************/
+.about {
+    padding: 100px 0 0 0;
+    text-align: center;
+}
+.about p {
+    font-size: 1.2rem;
+}
+/*******************
+band
+*******************/
+.band {
+    padding: var(--padding);
+    text-align: center;
+}
+.band img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 40px 0 40px;
+}
+.band img:hover {
+    transition: .6s ease;
+    border-radius: 40px 0 40px 0;
+}
+.band .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.band .container article {
+    flex: 0 0 30%;
+}
+.band h4 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/*******************
+video
+*******************/
+.video {
+    padding-bottom: 100px;
+}
+
+/*******************
+foter
+*******************/
+footer {
+    padding: var(--padding);
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    border-radius: 150px 0 0 0;
+}
+footer a {
+    color: var(--red);
+}
+footer a:hover {
+    color: var(--white);
+}
+footer .socials a {
+    font-size: 2rem;
+    margin: 0 20px;
+}
+
+.page-headers {
+    background-image: url(img/headers.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    border-radius: 0 0 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*******************
+main content - news page
+*******************/
+.main-content  {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    flex-wrap: wrap;
+}
+.main {
+    flex: 0 0 58%;
+    background: #f2efef;
+}
+aside {
+    flex: 0 0 38%;
+}
+.page-headers h1 {
+    color: var(--white);
+    font-size: 2.4rem;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(201, 111, 99,.8), rgba(0,0,0,.8));
+    border-radius: 0 60px 0 40px;
+    padding: 60px;
+}
+.box {
+    border: 1px solid var(--red);
+    padding: 20px;
+    background: #f2efef;
+}
+.main img {
+    width: 100%;
+    height: auto;
+}
+aside h3 {
+    border-bottom: 1px solid var(--lightgray);
+    margin-bottom: 10px;
+}
+.main-content .blog-post {
+    border-bottom: 1px solid var(--lightgray);
+    margin-bottom: 40px;
+}
+.main-content .blog-post:last-child {
+    border: none;
+}
+.meta {
+    background: var(--red);
+    padding: 10px;
+    color: var(--white);
+    border-radius: 20px 0;
+}
+.meta + p {
+    padding: 20px 0;
+}
+.btn {
+    background: var(--red);
+    padding: 10px 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--white);
+    border-radius: 0 20px;
+}
+.btn:hover {
+    background: var(--black);
+    border-radius: 20px 0;
+}
+
+/*******************
+contact page
+*******************/
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input {
+    flex: 0 0 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+textarea {
+    flex: 1;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    transition: var(--transition);
+}
+.news img {
+    width: 100%;
+    height: auto;
+}
+::placeholder {
+    font-size: .9rem;
+    font-family: "FTY SKORZHEN NCV";
+}
+/*******************
+R E S P O N S I V E
+*******************/
+@media(max-width: 768px) {
+    nav .container {
+    flex-direction: column;
+    }
+    nav ul li a {
+        margin:5px 10px;
+    }
+    .main-header {
+        padding: 20px;
+    }
+    .main-header h1 {
+        font-size: 2rem;
+        padding: 30px;
+    }
+    .band .container article,
+    .main,
+    aside {
+        flex: 0 0 100%;
+    }
+    .container {
+        width: 90%;
+    }
+    iframe {
+      width: 100%    !important;
+      height: auto   !important;
+    }
+}
+
