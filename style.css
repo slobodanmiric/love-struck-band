@@ -10,10 +10,6 @@
     --padding: 100px 0;
     --transition: .3s ease;
 }
-
-/*******************
-basic styles
-*******************/
 * {
     margin: 0;
     padding: 0;
@@ -34,26 +30,30 @@ body {
 h1, h2, h3, h4 {
     font-family: "FTY SKORZHEN NCV";
 }
+ul {
+    list-style: none;
+}
 a {
     text-decoration: none;
 }
 a:hover {
     transition: var(--transition);
 }
-ul {
-    list-style: none;
-}
-.headings {
-    font-size: 3rem;
-    padding-bottom: 30px;
-    text-align: center;
-}
 hr {
     height: 3px;
     width: 100%;
-    border: none;
     background: linear-gradient(to right, var(--red), var(--black));
+    border: none;
     margin-top: 100px;
+}
+.headings {
+/*    background: transparent url("img/sesir.png" ) no-repeat;*/
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+.headings::before {
+    
 }
 /*******************
 nav
@@ -62,6 +62,13 @@ nav {
     background: var(--black);
     border-top: 5px solid var(--red);
 }
+nav .container {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .logo img {
     width: 200px;
     height: auto;
@@ -69,22 +76,17 @@ nav {
 .logo:hover {
     opacity: .7;
 }
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
 nav ul {
     display: flex;
 }
 nav ul li a {
     color: var(--white);
     font-size: 1.6rem;
-    margin-left: 30px;
+    margin-left: 30px;;
 }
 nav ul li a:hover {
     color: var(--red);
+    transition: var(--transition);
 }
 /*******************
 header
@@ -101,27 +103,33 @@ header
 }
 .main-header h1 {
     color: var(--white);
-    font-size: 2.5rem;
-    background: linear-gradient(rgba(201, 111, 99,.8), rgba(0,0,0,.8));
-    padding: 30px;
+    font-size: 2.4rem;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(201, 111, 99,.8), rgba(0,0,0,.8));
     border-radius: 0 40px 0 40px;
+    padding: 30px;
 }
 .main-header h1 span {
     color: var(--black);
     text-shadow: 0 0 5px var(--white);
     letter-spacing: 2px;
+    font-size: 130%;
 }
 /*******************
 about
 *******************/
 .about {
-    padding: var(--padding);
-    text-align: center
+    padding: 100px 0 0 0;
+    text-align: center;
+}
+.about p {
+    font-size: 1.2rem;
 }
 /*******************
 band
 *******************/
 .band {
+    padding: var(--padding);
     text-align: center;
 }
 .band img {
@@ -130,28 +138,33 @@ band
     border-radius: 0 40px 0 40px;
 }
 .band img:hover {
+    transition: .6s ease;
     border-radius: 40px 0 40px 0;
-    transition: var(--transition);
 }
 .band .container {
     display: flex;
-    justify-content: space-between
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
 }
 .band .container article {
     flex: 0 0 30%;
 }
 .band h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 20px;
 }
+
 /*******************
 video
 *******************/
 .video {
-    padding: var(--padding);
+    padding-bottom: 100px;
 }
+
 /*******************
-footer
+foter
 *******************/
 footer {
     padding: var(--padding);
@@ -170,9 +183,7 @@ footer .socials a {
     font-size: 2rem;
     margin: 0 20px;
 }
-/*******************
-news
-*******************/
+
 .page-headers {
     background-image: url(img/headers.jpg);
     background-position: center;
@@ -183,21 +194,10 @@ news
     justify-content: center;
     align-items: center;
 }
-.page-headers h1 {
-    color: var(--white);
-    font-size: 2.5rem;
-    background: linear-gradient(rgba(201, 111, 99,.8), rgba(0,0,0,.8));
-    padding: 50px;
-    border-radius: 0 40px 0 40px;
-}
 /*******************
-main
+main content - news page
 *******************/
-.main img {
-    width: 100%;
-    height: auto;
-}
-.main-content {
+.main-content  {
     display: flex;
     justify-content: space-between;
     padding: var(--padding);
@@ -205,34 +205,47 @@ main
 }
 .main {
     flex: 0 0 58%;
+    background: #f2efef;
 }
 aside {
     flex: 0 0 38%;
+}
+.page-headers h1 {
+    color: var(--white);
+    font-size: 2.4rem;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(201, 111, 99,.8), rgba(0,0,0,.8));
+    border-radius: 0 60px 0 40px;
+    padding: 60px;
 }
 .box {
     border: 1px solid var(--red);
     padding: 20px;
     background: #f2efef;
 }
+.main img {
+    width: 100%;
+    height: auto;
+}
 aside h3 {
     border-bottom: 1px solid var(--lightgray);
     margin-bottom: 10px;
 }
-.blog-post {
+.main-content .blog-post {
     border-bottom: 1px solid var(--lightgray);
     margin-bottom: 40px;
 }
-.blog-post:last-child {
+.main-content .blog-post:last-child {
     border: none;
 }
 .meta {
     background: var(--red);
     padding: 10px;
     color: var(--white);
-    border-radius: 0 20px;
+    border-radius: 20px 0;
 }
 .meta + p {
-    padding: 20px  0;
+    padding: 20px 0;
 }
 .btn {
     background: var(--red);
@@ -240,15 +253,88 @@ aside h3 {
     display: inline-block;
     margin-bottom: 20px;
     color: var(--white);
-    border-radius: 20px 0;
+    border-radius: 0 20px;
 }
 .btn:hover {
     background: var(--black);
-    border-radius: 0 20px;
+    border-radius: 20px 0;
 }
 
-
-
-
-
+/*******************
+contact page
+*******************/
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;  /* na kraju posle display flex na news main*/
+}
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+button:hover {
+    transition: var(--transition);
+}
+.news img {
+    width: 100%;
+    height: auto;
+}
+::placeholder {
+    font-size: 1rem;
+    font-family: "FTY SKORZHEN NCV";
+}
+.news aside p {
+    font-size: 1.3rem;
+}
+.news .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*******************
+R E S P O N S I V E
+*******************/
+@media(max-width: 768px) {
+    nav .container {
+    flex-direction: column;
+    }
+    nav ul li a {
+        margin:5px 10px;
+    }
+    .main-header {
+        padding: 20px;
+    }
+    .main-header h1 {
+        font-size: 2rem;
+        padding: 30px;
+    }
+    .band .container article,
+    .main,
+    aside {
+        flex: 0 0 100%;
+    }
+    .container {
+        width: 90%;
+    }
+    iframe {
+      width: 100%    !important;
+      height: auto   !important;
+    }
+    .main {
+        margin-bottom: 40px;
+    }
+}
 
